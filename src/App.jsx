@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Demo from "./components/Demo/Demo";
@@ -10,6 +11,7 @@ import Write from "./components/Home/Write/Write";
 import SinglePost from "./components/Common/Posts/SinglePost";
 import EditPost from "./components/Common/Posts/EditPost";
 import FilterPost from "./components/Demo/FilterPost";
+import { UpdateFollower } from "react-mouse-follower";
 
 function App() {
   const { currentUser } = Blog();

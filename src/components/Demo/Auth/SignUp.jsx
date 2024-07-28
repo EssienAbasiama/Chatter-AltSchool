@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import Input from "../../../utils/Input";
 import { MdKeyboardArrowLeft } from "react-icons/md";
@@ -72,14 +74,16 @@ const SignUp = ({ setSignReq, setModal }) => {
         <button
           className={`first-letter:px-4 py-1 text-sm rounded-full bg-green-700
         hover:bg-green-800 text-white w-fit mx-auto
-        ${loading ? "opacity-50 pointer-events-none" : ""}`}>
+        ${loading ? "opacity-50 pointer-events-none" : ""}`}
+        >
           Sign Up
         </button>
       </form>
       <button
         onClick={() => setSignReq("")}
         className="mt-5 text-sm text-green-600 hover:text-green-700
-      flex items-center mx-auto">
+      flex items-center mx-auto"
+      >
         <MdKeyboardArrowLeft />
         All sign Up Options
       </button>
